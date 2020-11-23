@@ -4,11 +4,53 @@
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #c1b5ad;
+}
+
+#navbar {
+  height: 80px;
+  width: 100%;
+}
+
+#container {
+  display: flex;
 }
 
 #map {
   width: 100vw;
   height: 100vh;
+}
+
+#map {
+  z-index: 1;
+}
+
+#add-marker {
+  position: absolute;
+  height: 50%;
+  width: 400px;
+  background-color: green;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  top: 80px;
+}
+
+#add-itinerary {
+  position: absolute;
+  height: 50%;
+  width: 400px;
+  background-color: red;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9;
+}
+#app-container {
+  flex: 0 0 1;
+}
+
+#filter-container {
+  flex-direction: column;
+  align-items: space-between;
 }
